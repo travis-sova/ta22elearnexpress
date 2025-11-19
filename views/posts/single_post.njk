@@ -3,12 +3,17 @@
 {% block content %}
 
 <tbody>
-    <div>
-        <p><b>Title:</b> {{post.title}}</p>
-        <p>{{post.body}}</p>
-
-        <p><b>Created at:</b> {{post.createdAt}}</p>
-        <p><b>Updated at:</b> {{post.updatedAt}}</p>
+    <div style="display: grid; grid-template-columns: 125px 1fr;">
+        <p style="border-bottom: 1px solid #c6c7c8; padding: 0.5rem;"><b>ID:</b></p>
+        <p style="border-bottom: 1px solid #c6c7c8; padding: 0.5rem;">{{post.id}}</p>
+        <p style="border-bottom: 1px solid #c6c7c8; padding: 0.5rem;"><b>Title:</b></p>
+        <p style="border-bottom: 1px solid #c6c7c8; padding: 0.5rem;">{{post.title}}</p>
+        <p style="border-bottom: 1px solid #c6c7c8; padding: 0.5rem;"><b>Content:</b></p>
+        <p style="border-bottom: 1px solid #c6c7c8; padding: 0.5rem;">{{post.body}}</p>
+        <p style="border-bottom: 1px solid #c6c7c8; padding: 0.5rem;"><b>Created at:</b></p>
+        <p style="border-bottom: 1px solid #c6c7c8; padding: 0.5rem;">{{post.createdAt}}</p>
+        <p style="padding: 0.5rem;"><b>Updated at:</b></p>
+        <p style="padding: 0.5rem;">{{post.updatedAt}}</p>
     </div>
 </tbody>
 
