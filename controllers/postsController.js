@@ -42,4 +42,9 @@ router.get('/delete/:id', async (req, res) => {
     res.redirect('/posts');
 });
 
+router.get('/view/:id', async (req, res) => {
+    let post = await  db.Post.findByPk(req.params.id)
+    res.render('posts/single_post.njk', {post})
+})
+
 export default router;

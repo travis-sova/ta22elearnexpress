@@ -17,6 +17,11 @@
     "sequelize": "^6.37.3",
     "sqlite3": "^5.1.7"
   },
+  "overrides": {
+    "sqlite3": {
+      "node-gyp": "latest"
+    }
+  },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
     "nodemon": "^3.1.0",

@@ -1,0 +1,15 @@
+{% extends "partials/layout.njk" %}
+{% block title %}Post{% endblock %}
+{% block content %}
+
+<tbody>
+    <div>
+        <p><b>Title:</b> {{post.title}}</p>
+        <p>{{post.body}}</p>
+
+        <p><b>Created at:</b> {{post.createdAt}}</p>
+        <p><b>Updated at:</b> {{post.updatedAt}}</p>
+    </div>
+</tbody>
+
+{% endblock %}
